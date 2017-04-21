@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>Sugar_Installer_Activites</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="Sugar_Quitter_Activites.html">Mettre fin à une Activité</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="Sugar_Trouver_Activites.html">Aperçu des Activités</a></td>
+</tr>
+</table>
+
+<h1>Installer des Activités</h1>
+
+<p>Vous pouvez installer de nouvelles Activités en les téléchargeant et en les installant depuis un site web, depuis votre serveur d'école, depuis une clé USB ou depuis une carte SD.
+</p>
+<p>Il y a deux manière d'installer de nouvelles Activités:
+</p>
+<ul>
+  <li>Utilisez l'Activité Naviguer afin de télécharger une Activité, puis utilisez le Journal pour l'installer. </li>
+  <li>Utilisez l'Activité Terminal pour installer directement une Activité depuis une clé USB, en tapant une commande. </li>
+</ul>
+<h2>Installer depuis un site web
+</h2>
+<p>1. Dans la Vue Accueil, cliquez Naviguer.
+  <br /><img title="startbrowse_1_1" alt="startbrowse_1_1" src="Sugar/Browse/StartingBrowse/startbrowse_1_1.png" width="400" height="286" /> 
+  <br />
+  <br />2. Cliquez sur le lien <u>Activities</u> au milieu de la page (ou allez sur <a href="http://wiki.laptop.org/go/Activities">http://wiki.laptop.org/go/Activities</a>)
+  <br />
+  <br /><img title="activities" alt="activities" src="Sugar/Journal/activities.png" width="600" height="350" />
+  <br /><strong>Note:</strong> Toutes les activités Sugar ne sont pas listées sur la page  <a href="http://wiki.laptop.org/go/Activities/All.">http://wiki.laptop.org/go/Activities/All.</a>  Par exemple, la collection d'activité GCompris trouve sur <a href="http://wiki.laptop.org/go/GCompris">http://wiki.laptop.org/go/GCompris</a>.
+</p>
+<p>3. Sur la page des Activités, cherchez une nouvelle Activité à installer. (Dans l'exemple ci-dessous l'activité Puzzle est installée.)
+  <br />
+  <br /><img title="wikilaptopActivities" alt="wikilaptopActivities" src="OLPC_simple/InstallNewActivity/resized_400x300_wikilaptopActivities.jpg" width="400" height="300" /> 
+  <br />
+  <br />4. Cliquez sur le nom du fichier que vous voulez installer. Les fichiers d'Activité se terminent généralement par ".xo".
+  <br />
+  <br /><img title="jigsawxo" alt="jigsawxo" src="OLPC_simple/InstallNewActivity/resized_400x300_jigsawxo.jpg" width="400" height="300" /> 
+  <br />
+  <br />5. Vous pouvez vour retrouver sur une deuxième page. Cliquez le lien sur le fichier pour démarrer le téléchargement.
+  <br />
+  <br /><img title="versjigsawxo" alt="versjigsawxo" src="OLPC_simple/InstallNewActivity/resized_400x300_versjigsawxo.jpg" width="400" height="300" /> 
+  <br />
+  <br />6. Pendant le téléchargement, vous pouvez "Annuler" ou "Continuer" le téléchargement.
+</p>
+<p>
+  <br /><img title="download_in_progress" alt="download_in_progress" src="Sugar/Journal/download_in_progress.png" width="600" height="185" />
+  <br />
+  <br />7. Quand le téléchargement est terminé, cliquez sur "Montrer dans le Journal". (Si vous cliquez sur "OK", vous pouvez continuer la navigation et terminer l'installation depuis le Journal plus tard.)
+  <br />
+  <br /><img title="download_open_in_journal" alt="download_open_in_journal" src="Sugar/Journal/download_open_in_journal.png" width="600" height="185" />
+  <br />
+  <br />8. Vous vous retrouvez dans la vue détaillée du Journal.
+</p>
+<p><img title="journal_detail_view" alt="journal_detail_view" src="Sugar/journal_detail_view.png" width="600" height="185" />
+</p>
+<p>9. Cliquez sur "Démarrer" pour lancer l'Activité. L'Activité va être installée puis démarrée. Elle sera alors intégrée dans le mode liste de la vue Accueil.
+</p>
+<p><img title="journal_start" alt="journal_start" src="Sugar/journal_start.png" width="600" height="185" />
+</p>
+<p>Faites-vous plaisir avec votre nouvelle Activité !
+</p>
+<p> 
+</p>
+<h1><img src="OLPC_simple/InstallNewActivity/resized_400x300_jigsawpuzzleactivity.jpg" />
+</h1>
+<h2> </filename.xo></usb>
+</h2>
+<p><strong>Note:</strong> Si vous n'avez pas installé l'Activité lorsque vous l'avez télécharger, vous pouvez l'installer en ouvrant le Journal (cliquez sur l'icône Journal dans le cadre) puis en ouvrant la vue détaillée de cette entrée du Journal (cliquez sur l'icône <img title="journal_resume" alt="journal_resume" src="Sugar/journal_resume.png" width="23" height="23" />sur le côté droit de l'entrée).
+</p>
+<h2>Installer une Activité depuis un périphérique USB
+</h2> <dl> <dd>1. Insérer le périphérique USB. <dd>2. Démarrer l'Activité Terminal depuis la vue Accueil. <dd>3. Au prompt, tapez:
+<br />
+<pre>sugar-install-bundle /media/<em class="emphasis">&lt;USB device name&gt;/&lt;filename.xo&gt;</em></pre>(Remplacer  "&lt;USB device name&gt;" dans la commande par le nom actuel du périphérique USB et "&lt;filename.xo&gt;" par le répertoire et le nom du fichier .xo .)
+<br />Sugar va alors installer l'Activité.
+<br /></dd></dl>
+<p><strong>Astuce:</strong> Pour déterminer le nom du périphérique USB, vous pouvez aller dans l'Activité Journal et lire le nom de l'icône dans le coin bas à gauche de l'écran.
+</p>
+<h2>Installer un ensemble d'Activités
+</h2>
+<p>Les Activités sont téléchargées séparément depuis l'interface utilisateur Sugar. Pour installer un ensemble d'Activités sur un portable OLPC XO-1:
+</p>
+<ol>
+  <li>Téléchargez <a href="http://dev.laptop.org/~mstone/customization-2.zip">http://dev.laptop.org/~mstone/customization-2.zip</a>. </li>
+  <li>Décompresser le fichier "personnalisation-2.zip" sur une clé USB vierge. </li>
+  <li>Créez un répertoire appelé "bundles" sur la clé USB. </li>
+  <li>Téléchargez les fichiers d'Activités .xo et .xol que vous désirez (un exemple d'ensemble d'Activités peut être récupéré sur <a href="http://wiki.laptop.org/go/G1G1_bundled_activities#G1G1_deployment">http://wiki.laptop.org/go/G1G1_bundled_activities#G1G1_deployment</a>). </li>
+  <li>Copiez ces fichiers .xo et xol dans le sous-répertoire bundles de la clé USB.  </li>
+  <li>Eteignez votre portable XO-1. </li>
+  <li>Insérez votre clé USB dans votre portable XO-1. </li>
+  <li>Démarrez le portable XO-1. L'ensemble d'Activités sera automatiquement installé depuis la clé USB. </li>
+</ol>
+<p> 
+</p>
+
+<table>
+<tr>
+<td><a href="Sugar_Quitter_Activites.html">Mettre fin à une Activité</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="Sugar_Trouver_Activites.html">Aperçu des Activités</a></td>
+</tr>
+</table>
+
+</body>
+</html>

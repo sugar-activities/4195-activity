@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>Sugar_Sauvegarde</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="XO_Prendre_soin_du_XO.html">Prendre soin du XO</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Maintenance.html">Maintenance du XO</a></td>
+</tr>
+</table>
+
+<h1>Sauvegarder</h1>
+
+<p>Lorsque vous travaillez sur une Activité Sugar, c'est une bonne chose de faire une seconde copie de votre travail.  Utilisez un dispositif de stockage externe pour sauvegarder le travail que vous avez réalisé avec Sugar ; vous pourrez ainsi le transférer sur un autre ordinateur.
+</p>
+<p>Si vous avez à disposition un serveur d'école, vous pouvez sauvegarder votre travail sur le serveur.  Si vous voulez reprendre votre travail par la suite, vous pouvez copier le contenu depuis le serveur d'école vers votre ordinateur.
+</p>
+<h2>Dispositifs externes de stockage
+</h2>
+<p>Si vous voulez une seconde copie de vos fichiers, vous pouvez les stocker sur un dispositif externe de stockage tel qu'une carte SD ou une clé USB.  Pour copier des fichiers sur un dispositif externe, suivez les étapes suivantes.
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p>1. Lancez l'Activité Journal, soit en cliquant sur l'icône loupe, soit en allant dans <em>Vue Accuei</em>l et en cliquant sur l'icône <strong>Journal</strong> en bas du cercle <em>Accueil </em>
+  </p>
+  <p>2. Insérez la carte SD ou la clé USB dans votre ordinateur.  Le Journal montre une icône dans la barre inférieure lorsque vous insérez votre dispositif externe de stockage.
+  </p><a href="http://myschoolserver/ds-restore" target="_top"><img title="sdicon_1" alt="sdicon_1" src="OLPC_simple/TuteBackingUp/resized_400x52_sdicon.png" height="52" width="400" /></a>
+  <p>3. Cliquez pour sélectionner un fichier puis faites glisser le fichier jusqu'à l'icône SD ou USB dans la barre inférieure.
+  </p>
+  <p>4. Lorsque vous en avez terminé avec la carte SD ou le périphérique USB, cliquez avec le bouton droit sur l'icône et choisissez <strong>Démonter</strong>.
+  </p><img title="sdcard_1" alt="sdcard_1" src="OLPC_simple/TuteBackingUp/resized_400x300_sdcard.png" height="300" width="400" />
+  <p>5. Vous pouvez maintenant retirer votre dispositif externe soit en enlevant directement la clé USB soit en éjectant la carte SD par un appui sur la fente. 
+  </p>
+</blockquote>
+<h2 dir="ltr">Activité Terminal
+</h2>
+<p dir="ltr">Vous pouvez voir le nom d'une carte SD ou d'un clé USB avec l'Activité <strong>Terminal</strong>.
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">1. Lancez l'Activité <strong>Terminal</strong>.
+  </p>
+  <p dir="ltr">2. Trouvez le nom du dispositif externe qui se trouvera dans le répertoire /media. Par exemple, saisissez:
+  </p>
+  <p dir="ltr">
+  </p>
+  <pre><font face="Courier New" size="2">df</font></pre>
+  <p dir="ltr">
+  </p>
+  <p dir="ltr">3. Vous voyez le nom de votre carte SD ou de votre clé USB dans la colonne précédée de /media/.  Vous devez connaître ce nom pour trouver des fichiers avec la commande suivante.
+  </p>
+  <p dir="ltr">4. Utilisez la commande de changement de répertoire (cd) pour vous positionner sur votre périphérique de stockage et appuyez <strong>enter</strong>.
+  </p>
+  <p dir="ltr">
+  </p>
+  <pre><font face="Courier New" size="2">cd /media/5962-0A03</font></pre>
+  <p dir="ltr">
+  </p>
+  <p dir="ltr">5. Puis utilisez la commande de liste (ls) pour lister tous les fichiers sur le dispositif de stockage et appuyez <strong>enter</strong>.
+  </p>
+  <pre><font face="Courier New" size="2">ls</font></pre>
+  <p dir="ltr">
+  </p><img title="terminal_ls" alt="terminal_ls" src="OLPC_simple/TuteBackingUp/resized_400x200_terminal_ls.jpg" height="200" width="400" />
+  <p dir="ltr">Tous les fichiers peuvent être affichés en lançant la commande <strong>ls</strong>.
+  </p>
+</blockquote>
+<h2 dir="ltr">Sauvegarder via le serveur d'école
+</h2>
+<p dir="ltr">Vous enregistrez votre ordinateur sur un serveur d'école en cliquant sur l'icône XO dans <em>Vue Accueil </em>et en choisissant S'enregistrer, puis Redémarrer.  Une fois que votre ordinateur est enregistré, une tâche de sauvegarde, qui tourne une fois par jour, collectera les Activités de votre <strong>Journal</strong> et les stockera sur un ordinateur séparé, le serveur d'école.
+</p>
+<p dir="ltr">Si vous pensez avoir perdu des données ou que vous désirez revenir à une certaine date ou à un certain moment, demandez à votre enseignant le nom de votre serveur d'école.
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">1. Lancez l'Activité Naviguer
+  </p>
+  <p>2. Entrez l'adresse web de votre serveur d'école suivie par /ds-restore.
+    <br />
+  </p>
+  <pre>http://myschoolserver/ds-restore 
+</pre>
+  <p dir="ltr">3. Dans la liste des données quotidiennes sauvegardées, cliquez sur une date.
+  </p>
+  <p dir="ltr">4. Dans la liste des documents disponibles à cette date, cliquez sur un document.
+  </p>
+  <p dir="ltr">5. Selon le type de document, soit l'Activité <strong>Lire</strong> soit l'Activité <strong>Naviguer</strong> sera lancée. Sugar la stockera automatiquement et localement une fois qu'elle aura été lancée
+  </p>
+
+<table>
+<tr>
+<td><a href="XO_Prendre_soin_du_XO.html">Prendre soin du XO</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Maintenance.html">Maintenance du XO</a></td>
+</tr>
+</table>
+
+</body>
+</html>

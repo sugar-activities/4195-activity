@@ -1,0 +1,28 @@
+* 2009-07-14: Version 4 (Lionel Laske fixes)
+
+- Many bug fixes
+- Add many missing images.
+- Add two missing chapters
+  "Pour commencer" and "A propos d'OLPC"
+- Display the index page in two columns
+
+* 2009-07-12: Version 3
+
+- Replaced license by GPLv3
+- added my contact address
+
+* 2009-06-25: Version 2
+
+- Compressed png and jpg images: gain 2MO
+- Translated the file names
+- Added a menu table in each file
+- Added headers with the right encoding in HTML files
+- Fixed some image links
+- Removed MANIFEST (to be updated)
+- Use line-wrap in LICENCE
+
+* 2009-06-24: Version 1 
+
+- Added french content from flossmanual
+- Fix missing images
+- Clean up the webpages

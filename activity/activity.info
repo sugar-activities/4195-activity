@@ -1,0 +1,7 @@
+[Activity]
+name = Helpfr
+activity_version = 4
+service_name = org.laptop.HelpfrActivity
+icon = activity-help
+class = helpactivity.HelpActivity
+license = GPLv3

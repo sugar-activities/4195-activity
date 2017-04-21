@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>XO_FAQ</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="XO_Comment_Flasher.html">Réinitialiser les paramètres d'usine</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Support.html">Obtenir de l'aide</a></td>
+</tr>
+</table>
+
+<h1>Guide de diagnostic des problèmes</h1>
+
+<p>Ce chapitre présente un guide permettant de trouver une solution à un problème que vous pourriez rencontrer avec Sugar.
+  <br />
+</p>
+<h2><span class="mw-headline">Démarrage</span>
+</h2><a name="Where_do_I_get_support.3F"></a>
+<h3><span class="mw-headline">Où puis-je trouver de l'aide?</span>
+</h3>
+<p>Le Sugar Labs et la fondation OLPC possèdent des communautés de support qui peuvent vous aider. Elles ont rédigés de la documentation, telle que ce manuel. Elles proposent également de l'aide via des chats en ligne, des forums web interactifs ainsi que des groupes d'utilisateurs locaux. Référez-vous, svp, à <a href="http://wiki.laptop.org/">http://wiki.laptop.org</a> et <a href="http://wiki.sugarlabs.org">http://wiki.sugarlabs.org</a> pour plus d'information.
+  <br />
+</p>
+<h3><span class="mw-headline">Puis-je imprimer depuis le portable XO?</span>
+</h3>
+<p>Pour l'instant, il n'existe pas de support d'impression dans l'interface d'utilisateur Sugar.
+  <br />
+</p><a name="How_do_I_access_a_Linux_command_prompt.3F"></a>
+<h3><span class="mw-headline">Comment puis-je lancer une commande GNU/Linux ?</span>
+</h3>
+<p>Référez-vous, svp, au chapitre Activité Terminal.
+  <br />
+</p><a name="What_does_.22Register.22_.28in_Home_view.29_do.3F"></a>
+<h3><span class="mw-headline">A quoi sert la commande "S'Enregister" (dans le menu déroulant de la Vue Accueil)  ?</span>
+</h3>
+<p>"S'Enregistrer" concerne les enfants qui sont connectés à un serveur d'école. Il est inutile en dehors de ce contexte. Référez-vous, svp, à la page "School Identity Manager" sur le wiki OLPC pour des explications supplémentaires<span class="mw-headline"></span>
+</p>
+<h3><span class="mw-headline">Pour quelle raison n'y a-t-il pas de système de fenêtrage dans Sugar ?
+  <br /></span>
+</h3>
+<h3>
+</h3>
+<p>L'interface d'utilisateur Sugar repose sur le système X Window. Pour utiliser une métaphore, Sugar présente toujours un zoom de la fenêtre courrante plutôt que de chevaucher des fenêtres:  la présence du systèmes de fenêtres X Window est donc moins visible.
+  <br />
+</p>
+<h3><span class="mw-headline">Comment puis-je apprendre l'environnement Sugar XO ?</span>
+</h3>
+<p>Sugar diffère des PC traditionnels et des Mac car nous pensons que vous ne faites pas qu'"apprendre en utilisant" mais aussi en collaborant avec d'autres utilisateurs pour apprendre de nouvelles choses. Pour trouver quelqu'un qui pourra vous aider à apprendre, vous pouvez rechercher un groupe local d'utilisateurs Sugar en faisant une recherche sur Internet.
+  <br />
+</p>
+<h3><span class="mw-headline">Comment puis-je modifier mon pseudo ? les couleurs de mon XO ?</span>
+</h3>
+<p>Vous pouvez modifier votre pseudo et les couleurs depuis le panneau de contrôle Sugar, dans le menu déroulant qui se trouve dans la Vue Accueil lorsque vous y voyez l'anneau.
+  <br />
+</p>
+<h3><span class="mw-headline">Comment puis-je régler la date et l'heure sur mon XO ?</span>
+</h3>
+<p>Vous pouvez les régler de cette façon :
+</p>
+<ol>
+  <li>Connectez-vous à Internet. </li>
+  <li>Démarrez l'Activité Terminal.
+  <br /> </li>
+  <li>Démarrez un processus administrateur en saisissant:
+  <pre>su -l</pre> </li>
+  <li> Lors de l'affichage du prompt (#) entrez les commandes suivantes:
+  <pre>/usr/sbin/ntpdate time.nist.gov
+/usr/sbin/hwclock --systohc</pre> </li>
+  <li>En réponse à la commande ntpdate - si elle s'est correctement connectée au serveur temporel officiel des USA -, une ligne devrait apparaître indiquant la date et l'heure correctes.
+  <br /></li>
+</ol>
+<h3><span class="mw-headline">Comment puis-je régler le fuseau horaire sur mon XO ?</span>
+</h3>
+<p>Vous pouvez le régler via le panneau de contrôle Sugar.
+  <br />
+</p><a name="Keyboard.2C_Languages"></a><a name="What_are_the_functions_of_all_the_keys_on_the_keyboard.3F"></a>
+<h3><span class="mw-headline">Quelles sont les fonctions des touches clavier ?</span>
+</h3>
+<ul>
+  <li><strong>F1</strong> Vue Voisinage </li>
+  <li><strong>F2</strong> Vue Groupe </li>
+  <li><strong>F3</strong> Vue Accueil </li>
+  <li><strong>F4</strong> Vue Activité </li>
+  <li><strong>Shift-Alt-F</strong> Afficher/Cacher le Cadre
+  <br /> </li>
+  <li><strong>Alt-Tab</strong> Avancer dans la liste les Activités en cours
+  <br /> </li>
+  <li><strong>Shift-Alt-Tab</strong> Reculer dans la liste des Activités en cours
+  <br /> </li>
+  <li><strong>Ctrl-Tilde</strong>  Avancer dans les instances en cours de l'Activité utilisée
+  <br /> </li>
+  <li><strong>Shift-Ctrl-Tilde</strong> Retourner dans les instances en cours de l'Activité utilisée </li>
+</ul>
+<ul>
+  <li><strong>Ctrl-c</strong> Copier dans le presse-papiers
+  <br /> </li>
+  <li><strong>Ctrl-v</strong> Coller depuis le presse-papiers
+  <br /> </li>
+  <li><strong>Ctrl-x</strong> Couper (et copier) depuis le presse-papiers
+  <br /> </li>
+  <li><strong>Ctrl-a</strong> Tout sélectionner (dans la saisie/dialogue ou boîte de texte en cours)
+  <br /> </li>
+  <li><strong>Ctrl-q</strong> Quitter une Activité
+  <br /> </li>
+  <li><strong>Ctrl-Esc</strong> Quitter une Activité 
+  <br /> </li>
+  <li><strong>Alt-Enter</strong> Passer en Mode plein écran
+  <br /> </li>
+  <li><strong>Alt-Space</strong> Rendre la barre visible
+  <br /> </li>
+  <li><strong>Ctrl-u</strong> Voir les sources de la page dans l'Activité Naviguer (ouvre une copie des sources dans l'Activité Ecrire)
+  <br /> </li>
+  <li><strong>Fn-Space</strong> Voir les sources (utilisable partout dans le système, bien qu'il ne soit pas disponible dans toutes les applications pour l'instant)
+  <br /> </li>
+  <li><strong>Ctrl-Alt-Erase</strong> Redémarrer Sugar
+  <br /> </li>
+  <li><strong>Alt-1</strong> Capture d'écran; sauvegardé dans le Journal en tant que fichier PNG appelé "Screenshot"
+  <br /> </li>
+  <li><strong>Ctrl-Alt-F1</strong> Ouvrir Console 1 </li>
+  <li><strong>Ctrl-Alt-F2</strong> Ouvrir Console 2
+  <br /> </li>
+  <li><strong>Ctrl-Alt-F3</strong> Ouvrir X Windows </li>
+</ul>
+<p>Le clavier XO-OLPC contient certaines touches dédiées à l'interface Sugar. Reportez vous à <a href="http://wiki.laptop.org/go/Keyboard_Shortcuts">http://wiki.laptop.org/go/Keyboard_Shortcuts</a> pour plus de détails. 
+</p>
+<h2><span class="mw-headline">Internet, Connectivité, Email, Chat </span>
+</h2><a name="How_can_I_access_the_Internet.3F"></a>
+<h3><span class="mw-headline">Comment puis-je accéder à Internet ?</span>
+</h3>
+<p>Notre <a title="Wifi Connectivity" href="http://wiki.laptop.org/go/Wifi_Connectivity">Connectivity Quick Start Guide</a> répond à la plupart de ces questions.
+</p>
+<h3>Que faire si je n'arrive pas à me connecter ?
+  <br />
+</h3>
+<p>Avez-vous un accès WiFi (sans fil)/Internet à proximité ?
+  <br />
+</p>
+<p>Votre point d'accès WiFi est-il protégé ? Si oui, il vous faut un mot de passe pour pouvoir vous connecter.
+  <br />
+</p>
+<p>Vous êtes-vous connecté à votre point d'accès WiFi ?
+  <br />
+</p>
+<p>Allez sur Vue Voisinage et cliquez sur le cercle représentant votre point d'accès WiFi. Son nom apparaîtra lorsque vous survolerez le cercle avec votre pointeur. Après que vous ayez cliqué dessus, son centre devrait scintiller. Lorsque vous serez connecté, le scintillement s'arrêtera et une icône ronde apparaîtra dans le coin droit du Cadre indiquant la connexion. Si votre point d'accès est protégé, il vous sera demandé de saisir un code. Sélectionnez le code approprié à votre point d'accès dans le menu déroulant. Vous pouvez vérifier que vous êtes bien connecté en survolant le cercle de statut de réseau dans Vue Accueil. Référez-vous, svp, au chapitre Connectivité pour plus d'informations.
+  <br />
+</p>
+<h3><span class="mw-headline">Comment puis désactiver le WiFi quand je suis en avion ?</span>
+</h3>
+<p>Pour cela, référez-vous au panneau réseau dans le panneau de contrôle Sugar et décocher la case à cocher WiFi ou Wireless.
+  <br />
+</p><a name="Can_XO_laptops_share_an_Internet_connection.3F"></a><a name="What_exactly_is_a_mesh_network.3F"></a>
+<h3><span class="mw-headline">Qu'est-ce qu'un réseau maillé ?</span>
+</h3>
+<p>Un réseau maillé permet à des portables proches de communiquer directement (sans nécessiter de réseau sans fil) et sans passer par un fournisseur Internet traditionnel.
+  <br />
+</p><a name="Is_there_an_email_program.3F"></a>
+<h3><span class="mw-headline">Un programme de gestion de courrier électronique est-il disponible ?</span>
+</h3>
+<p>Il n'existe pas de client de gestion de courrier électronique en standard dans Sugar. Utilisez <a title="Gmail" href="http://wiki.laptop.org/go/Gmail">Gmail Activity</a> pour accéder à votre email, pour autant que vous possédiez un compte @gmail.com; vous pouvez également et simplement utiliser <u>Naviguer</u> pour accéder à la plupart des comptes email disposant d'un accès sur le web.<u>
+  <br /></u>
+</p>
+<h3><span class="mw-headline">Puis-je installer d'autres applications, telles que Flash, Java, AIM, MSN Messenger ou Skype ?</span>
+</h3>
+<h3>
+</h3>
+<p>Reportez-vous, svp, au chapitre "Installer les application GNU/Linux".
+  <br />
+</p>
+<h2>Accès aux fichiers
+  <br />
+</h2>
+<h3>Comment puis-je sauvegarder mon travail ?
+</h3>
+<p>Votre travail est automatiquement sauvegardé dans le Journal.
+</p>
+<h3>Comment puis-je faire une copie de sauvegarde de mon travail ?
+</h3>
+<p>Vous pouvez le faire via un dispositif de stockage USB. Lorsque vous insérerez ce dispositif, il sera automatiquement chargé et apparaîtra sous forme d'icône dans le Journal (en bas de l'écran). Vous pourrez copier-coller les données du Journal sur l'icône afin de les transférer sur le dispositif USB. Lorsque vous aurez terminé, utilisez le menu déroulant pour fermer le dispositif.
+  <br />
+</p>
+<p><a name="software"></a>
+</p>
+<h3>Comment puis-je ajouter de nouveaux programmes et contenus sur mon XO ?
+  <br />
+</h3>
+<p>OLPC propose une page <a href="http://wiki.laptop.org/go/Activities" target="_blank">Activities</a> avec des liens vers beaucoup de programmes supplémentaires à installer. Vous pouvez installer de nouveaux programmes directement depuis le navigateur web. Les Activités seront "encapsulées" dans des fichiers ayant le suffixe .xo. Cliquer sur un fichier .xo lancera sont téléchargement dans votre Journal. Si vous lancez ensuite l'Activité depuis le Journal, cela l'installera dans la Vue Liste de la Vue Accueil. De la même façon, vous pouvez télécharger des contenus commes des PDF ou des fichiers DOC, des vidéos et de la musique dans votre Journal. Vous pouvez aussi installer des applications et du contenu depuis un dispositif de stockage USB vers le Journal. Vous pouvez installer des programmes depuis l'Activité Terminal qui vous donne accès à une ligne de commande Linux.
+  <br />
+</p>
+<h3>Comment puis-je charger un fichier du disque dans l'Activité Navigateur ?
+  <br />
+</h3>
+<p>Ouvrez l'activité Navigateur. Dans une fenêtre au milieu haut de cette page, vous verrez les mots "OLPC Library". Cliquez dessus et vous verrez l'URL suivante  <a href="file:///home/olpc/.library_pages/search/bundle__index.html" target="_top">file:///home/olpc/.library_pages/search/bundle__index.html</a>  s'afficher dans la fenêtre. Ainsi le contenu du fichier: .library_pages/searche/bundle_index.html se téléchargera et s'affichera sur le navigateur. Si vous remplacez le nom du fichier dans la fenêtre par le nom du fichier que vous voulez télécharger et afficher sur l'écran (par exemple <a href="file:///home/olpc/upload-file.html" target="_top">file:///home/olpc/upload-file.html</a>)  et que vous pressiez <strong>enter</strong>, le fichier upload-file.html sera téléchargé directement de votre répertoire olpc et affiché dans l'Activité Navigateur.
+  <br />
+</p>
+<h3>Comment puis-je sauvegarder ou récupérer les fichiers d'un périphérique USB ou d'une carte SD (Secure Digital) ?
+</h3>
+<p>Reportez-vous,aux instructions complètes concernant l'utilisation d'un dispositif de stockage USB (connus également sous le nom de dispositif flash ou clé/strick USB).
+  <br />
+</p>
+<h3>Comment puis-je effacer un fichier ?
+  <br />
+</h3>
+<p>Allez sur le Journal - que vous pouvez atteindre depuis le Cadre. Cliquez sur l'icône Bloc-notes afin d'ouvrir le Journal. Trouvez le fichier à effacer en faisant défiler la liste. Ouvrez la vue détaillée afin de trouver le fichier en cliquant sur le nom de ce fichier. Dans la vue détaillée, appuyez le bouton "moins" en haut de l'écran afin d'effacer le fichier.
+  <br />
+</p>
+<h2>Activités
+  <br />
+</h2>
+<h3>Comment puis-je fermer une Activité (programme) ?
+  <br />
+</h3>
+<p>La plupart des Activités possèdent un onglet "Activité" comprenant un bouton pour fermer en haut à droite de l'écran; cliquez sur ce bouton pour terminer l'Activité. Pour la plupart des Activités, les raccourcis clavier <strong>ctrl + q </strong>ou<strong> ctrl + esc</strong> peuvent également terminer l'Activité. Sinon, dans le Cadre, survolez l'icône de l'Activité avec votre pointeur afin de faire afficher son menu; cliquez "stop" pour fermer l'Activité.
+  <br />
+</p>
+<h3>Comment puis-je télécharger et lancer des Activités (des programmes) ?
+  <br />
+</h3>
+<p>Il existe beaucoup d'Activités à télécharger développées par la communauté. Lancez l'Activité Naviguer, allez sur "Activity" et cliquez sur un fichier .xo que vous trouverez sur la page. Cela permet de télécharger et d'installer des Activités sur votre XO. Lorsque l'installation est terminée, cliquez sur OK. Appuyez la touche Accueil (5e touche depuis le haut à gauche) afin de voir la Vue Accueil. Cliquez sur l'icône Vue Liste en haut à droite de Vue Accueil afin de voir toutes les Activités. Déroulez la liste, si cela est nécessaire, jusqu'à ce que vous voyez l'icône de l'Activité que vous venez d'installer. Cliquez sur cette icône pour démarrer l'Activité.
+  <br />
+</p>
+<p>Toutes les Activités du XO ont été développées par les volontaires de la communauté open-source. OLPC encourage tous les possesseurs de XO à contribuer à cet effort.
+  <br />
+</p>
+<h3>Comment puis-je utiliser la caméra ?
+  <br />
+</h3>
+<p>La caméra peut être utilisée via l'Activité Enregistrer.
+</p>
+<p><strong>Comment puis-je faire une capture d'écran ?</strong>
+</p>
+<h3>
+</h3>
+<p>Appuyez <strong>alt + 1</strong> (appuyez la touche <strong>1</strong> tout en appuyant sur la touche <strong>alt</strong> en même temps). Allez sur le Journal. La capture d'écran devrait être le premier élément du Journal. Vous pourrez alors copier la capture d'écran sur le presse-papiers et l'ouvrir avec l'Activité Navigateur, Dessiner ou Etoys, ou encore l'amener vers un dispositif USB afin de la transférer ensuite sur un autre ordinateur. Cette fonctionnalité permet également de faire des captures d'écran provenance du web.
+  <br />
+</p>
+<h3>Comment puis-je lire des fichiers PDF ?
+  <br />
+</h3>
+<p>Cliquez sur un fichier PDF afin de lancer automatiquement l'Activité Lire, que ce soit depuis un navigateur web (Activité Navigateur) ou depuis un dispositif de stockage USB (Activité Journal).
+  <br />
+</p>
+<h3>Navigateur : Comment puis enregistrer un site web pour y naviguer plus tard ?
+  <br />
+</h3>
+<p>Cliquez sur l'étoile (coin en haut à droite) pour marquer ce site; son adresse sera sauvegardée dans le Journal pour une future utilisation.
+  <br />
+</p>
+<h3>Navigateur : comment puis-je protéger mes enfants de contenus répréhensibles ?
+  <br />
+</h3>
+<p>La meilleure chose que vous puissiez faire afin de garder vos enfants en sécurité est de participer à leur éducation. Par exemple, leur expliquer le genre de menaces qu'ils pourraient rencontrer en ligne, et le comportement qui y est approprié : ne jamais donner d'informations personnelles comme une adresse, un numéro de téléphone, ou quoi que ce soit d'autre comme information personnelle, sur le net.
+</p>
+<p>Il existe des solutions tierces possibles comme <a href="http://dansguardian.org/" target="_top">http://DansGuardian.org</a>.
+</p>
+<h2>Développement d'Activités
+  <br />
+</h2>
+<h3>Comment puis-je commencer à écrire un programme pour le XO ?
+  <br />
+</h3>
+<p>Vous pouvez trouver des informations sur comment créer vos propres programmes pour le XO au paragraphe "Getting started programming" sur <a href="http://wiki.laptop.org/go/Developers">http://wiki.laptop.org/go/Developers</a> . Pour ceux d'entre vous qui êtes déjà familiers avec Linux et Python, un tutorial vous guidera pas à pas à la construction d'une Activité Sugar.
+  <br />
+</p>
+<h3>Comment puis-je indiquer un bug ?
+  <br />
+</h3>
+<p>Nous sommes très intéressés par les informations sur de possibles bugs. Rapportez-nous, svp, vos informations sur les bugs en envoyant un email à <a href="mailto:help@laptop.org">help at laptop.org</a>. Pour les développeurs, svp, continuez à classer les bugs dans notre <a href="http://dev.laptop.org/" target="_blank">tracking system</a> .
+  <br />
+</p>
+<p>Nous sommes également interessés par vos suggestions en vue d'améliorer notre système.
+  <br />
+</p>
+<p>Les apports et la collaboration de la communauté sont vitaux pour le succès d'OLPC. Merci de votre participation.
+</p>
+<p> 
+</p>
+<p> 
+</p>
+<p>
+  <br />
+</p>
+
+<table>
+<tr>
+<td><a href="XO_Comment_Flasher.html">Réinitialiser les paramètres d'usine</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Support.html">Obtenir de l'aide</a></td>
+</tr>
+</table>
+
+</body>
+</html>

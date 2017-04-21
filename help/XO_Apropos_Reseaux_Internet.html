@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>XO_Apropos_Reseaux_Internet</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="Sugar_Audela_Activites.html">Au-delà des Activités</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="Sugar_Connecter_Reseaux.html">Se connecter</a></td>
+</tr>
+</table>
+
+<h1>Réseaux et Internet</h1>
+
+<h2>Qu'est-ce qu'un réseau ?
+</h2>
+<p>Un réseau informatique est un groupe d'ordinateurs connectés entre eux.
+</p>
+<h3>Types de réseaux
+</h3>
+<p>Les réseaux sont habituellement décrits par leur taille : un réseau local ("local-area network" ou LAN) couvre un petit secteur géographique, comme une maison, un bureau ou un immeuble ; un réseau étendu ("wide-area network" ou WAN) couvre un secteur géographique relativement grand (comme d'une ville à une autre ville ou encore d'un pays à un autre pays) ; un réseau métropolitain ("metropolitan-area network" ou MAN) permet à de multiples réseaux locaux de se connecter les uns aux autres, mais ne leur permet pas de s'étendre au-delà des frontières de leur village, ville, cité ou secteur.
+</p>
+<p>Il peut arriver que des réseaux soient décrits via le matériel qui leur permet de se connecter comme un satellite, une fibre optique, un cable Ethernet, sans fil ("wireless"), etc. Certains réseaux utilisent des connexions physiques - des câbles - alors que d'autres utilisent des ondes radio - sans fil.
+</p>
+<p>Un réseau peut aussi être décrit selon ses relations fonctionnelles : les réseaux <em>client-serveur</em> ou <em>pair-à-pair</em> ("peer-to-peer") en sont de bons exemples.
+</p>
+<p>Enfin, il est possible de décrire des réseaux selon leur typologie, c'est-à-dire selon les relations logiques qu'entretiennent différents dispositifs.  Par exemple : en bus, en étoile, maillé et en arbre.
+</p>
+<h3>Réseaux XO OLPC
+</h3>
+<p>Un réseau typique XO OLPC est un réseau local, sans fil, pair-à-pair et maillé. Cependant, le XO accepte (directement ou indirectement) une variété de réseaux.
+</p>
+<p>Les scénarios les plus communs utilisent tous des radios incorporées sans fil :
+</p>
+<ul>
+  <li>Maillé simple : Les XO communiquent les uns avec les autres sans accès Internet. </li>
+  <li>Infrastructure : Les XO se connectent à Internet via un point d'accès préexistant ("Access point" ou AP). </li>
+  <li>Serveur d'école: Les XO communiquent les uns avec les autres via un serveur d'école. </li>
+</ul>
+<p><img src="XO/GiveMeTheInternet/simple_mesh.png" />
+</p>
+<p><em>Réseau maillé simple</em>
+</p>
+<p><img src="XO/GiveMeTheInternet/infrustructure.png" />
+</p>
+<p><em>Réseau en infrastructure</em>
+</p>
+<p><img src="XO/GiveMeTheInternet/schoolserver.png" />
+</p>
+<p><em>Réseau via un serveur d'école</em>
+</p>
+<h3>Le serveur d'école
+</h3>
+<p>Une partie du modèle de déploiement OLPC fonctionne via des serveurs d'écoles (<em>School Server</em>). Ceux-ci sont conçus pour fournir une passerelle vers Internet, stocker localement des contenus, effectuer des sauvegardes, plus d'autres fonctions.  Aussi importants que puissent être tous ces services, leur rôle majeur est de pouvoir supporter un réseau local.  Sans serveur d'école, le plus grand réseau ne peut supporter plus d'une vingtaine d'ordinateurs portables.  Chaque serveur d'école peut, quant à lui, en supporter jusqu'à environ 120.
+</p>
+<p>Les raisons en sont les suivantes :
+</p>
+<ul>
+  <li>En maintenant l'état des informations, le serveur d'école élimine la majorité du trafic multiple qui sinon alourdirait grandement le réseau.  </li>
+  <li>Le serveur d'école peut unifier jusqu'à trois différents réseaux maillés. </li>
+</ul>
+<h2>Qu'est-ce qu'Internet ?
+</h2>
+<p>Internet consiste en une interconnexion mondiale de réseaux gouvernementaux, académiques, publics et privés. Internet transporte diverses sources d'information et de services, comme le courrier électronique, le chat, des documents, des jeux en ligne, ainsi que le World Wide Web (WWW).
+</p>
+<h2>Mettez Internet à ma disposition !
+</h2>
+<p>Bien que l'écosystème OLPC fournisse un réseau sans fil auto-configuré et local, la connectivité à Internet est quelque chose qui nécessite d'être mis au point au cas par cas. 
+</p>
+<h2>Glossaire des termes relatifs au réseau
+</h2>
+<p>Réseau maillé
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p>Un réseau maillé sans fil est un réseau de communication qui est composé de nœuds radio qui peuvent transmettre des informations vers d'autres nœuds.  Ainsi, deux nœuds qui ne sont pas en contact radio direct peuvent communiquer avec d'autres nœuds en utilisant les noeuds qui sont entre eux.  La zone de couverture collective de ces noeuds radio fonctionnant comme un unique réseau devient un nuage maillé (<em>cloud</em>).
+    <br />
+  </p>
+</blockquote>
+<p dir="ltr">Mode infrastructure
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">Connexion à un réseau via un point d'accès WiFi (sans fil), par exemple 802.11b/g.
+  </p>
+</blockquote>
+<p dir="ltr">Mode maillé
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">La connexion à un réseau maillé (le protocole d'acheminement de maille utilisé par un ordinateur OLPC - maille OLPC - est basé sur le standard 802.11s qui est en cours de développement par le groupe de travail 802.11s  <a href="http://www.ieee802.org/11/Reports/tgs_update.htm"><font color="#000000">[</font></a><a href="http://www.ieee802.org/11/Reports/tgs_update.htm">http://www.ieee802.org/11/Reports/tgs_update.htm</a><u>]</u>.)
+  </p>
+</blockquote>
+<p dir="ltr">Mode maillé simple
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">Réseau maillé entre des ordinateurs portables sans serveur d'école.
+  </p>
+</blockquote>
+<p dir="ltr">Mode maillé via serveur d'école
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">Réseau maillé relayé par un serveur d'école.
+  </p>
+</blockquote>
+<p dir="ltr">Canal de maille
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">Les ordinateurs portables utilisent trois canaux de communication : 1, 6 et 11 ; dans un réseau maillé simple, les ordinateurs ne peuvent voir que les autres ordinateurs utilisant le même canal ; dans un réseau maillé via un serveur d'école, les ordinateurs de tous les canaux sont visibles.
+  </p>
+</blockquote>
+<p dir="ltr">Point d'accès (AP - <em>Access Point</em>)
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">Un point d'accès est un dispositif qui connecte entre eux des dispositifs de communication sans fil afin de former un réseau sans fil.  L'AP permet généralement de se connecter à un réseau câblé, et peut retransmettre des données entre des dispositifs sans fil et des dispositifs câblés. Plusieurs AP peuvent se lier pour former un plus grand réseau.
+  </p>
+</blockquote>
+<p dir="ltr">Point de portail de maille
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">C'est une maille qui sert de passerelle (portail) pour un réseau extérieur au réseau maillé.
+  </p>
+</blockquote>
+
+<table>
+<tr>
+<td><a href="Sugar_Audela_Activites.html">Au-delà des Activités</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="Sugar_Connecter_Reseaux.html">Se connecter</a></td>
+</tr>
+</table>
+
+</body>
+</html>

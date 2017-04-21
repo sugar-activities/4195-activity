@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>Sugar_Audela_Activites</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="Sugar_Trouver_Activites.html">Aperçu des Activités</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Apropos_Reseaux_Internet.html">Réseaux et Internet</a></td>
+</tr>
+</table>
+
+<h1>Au-delà des Activités</h1>
+
+<p>Sugar offre de nombreuses manières d'utiliser un ordinateur au-delà de ce que l'écran affiche.  Découvrez ici quelques idées pour utiliser Sugar sur votre XO au-delà des d'Activités installées par défaut, et en utilisant les Activités actuellement disponibles. 
+</p>
+<h2>Créez un diaporama
+</h2>
+<p>Vous pouvez installer un programme appelé "feh" pour afficher une succession d'images et offrir un diaporama.
+</p>
+<p>Ce qu'il vous faut pour commencer:
+</p>
+<ul>
+  <li>Un moyen pour prendre des photographies, comme un XO ou un appareil photo numérique. </li>
+  <li>Une clé USB ou une carte SD dont vous connaissez le nom. </li>
+  <li>Une connexion Internet. </li>
+</ul>
+<p><img src="Sugar/casestudies/photoframe.JPG" height="563" width="563" />
+</p>
+<h3>Activité (pas à pas)
+</h3>
+<ol>
+  <li>Prenez des photographies de votre famille, votre école, votre maison, votre communauté avec l'Activité <strong>Enregistrer</strong> ou avec un appareil photo numérique. </li>
+  <li>Dans l'Activité <strong>Journal</strong>, faites glisser les photographies depuis l'icône SD ou USB jusqu'au Cadre, afin de copier les photographies depuis votre clé USB ou votre carte SD. </li>
+  <li>Ouvrez l'Activité <strong>Terminal</strong> et cliquez sur l'icone Devenir administrateur. </li>
+  <li>Saisissez la commande suivante puis appuyez sur la touche <strong>enter</strong>
+  <pre><font face="Courier New" size="2">yum install feh</font></pre> </li>
+  <li>Entrez y pour oui (<em>yes</em>) lorsque la permission de démarrer l'installation vous est demandée. </li>
+  <li>Une fois que <font face="Courier New" size="2">feh <font face="Verdana">se sera installé, vous pourrez lancer votre diaporama en saisissant ce qui suit dans votre Activité Terminal:</font></font>
+  <pre>  feh -F -D 5 --scale-down /media/cardname/
+</pre>
+  <p>où -F indique l'affichage en plein écran et -D 5 présente le diaporama avec une pause de 5 secondes entre les images.
+  </p> </li>
+  <li>Appuyez ctrl-q ou Q pour mettre fin au diaporama. </li>
+</ol>
+<h3>Idées pour une extension à toute la classe
+</h3>
+<h3>Créer
+</h3>
+<p>Créez quelque chose d'artistique dans l'Activité <strong>Dessiner</strong> plutôt que de prendre des photographies puis utilisez l'Activité <strong>Enregistrer</strong> pour votre diaporama.
+</p>
+<p>Créez une œuvre digitale ou une galerie de photographies avec tous vos ordinateurs, comme suspendues au mur ou présentées sur un chevalet.
+</p>
+<h3>Collaborer
+</h3>
+<p>Partagez des images en copiant des fichiers sur les clés USB ou les cartes SD d'autres étudiants.
+</p>
+<p>Faites collaborer vos élèves dans l'Activité <strong>Dessiner</strong> en faisant dessiner chaque élève durant une minute sur une œuvre partagée en temps réel, comme ce que vous trouverez sur le site Swarm Sketch : <a href="http://swarmsketch.com/">http://swarmsketch.com/</a>.
+</p>
+<p>Faites télécharger à vos élèves des images concernant un thème en particulier ou utilisez la recherche par mot clé de certains sites, tels que <a href="http://flickr.com/">http://flickr.com/</a> afin de créer un diaporama comportant uniquement des chats, des chiens ou d'autres animaux familiers.
+</p>
+<h3>Adapter
+</h3>
+<p>Pensez à un endroit où pourrait être présenté un diaporama depuis l'ordinateur dans un but pratique, tel qu'une offre de publicité continue pour un magasin ou un restaurant.
+</p>
+<p>Comment les élèves pourraient-ils créer un modèle économique pour la vente de publicités, en concevant des diaporamas et en les affichant comme s'ils étaient un panneau d'affichage ?
+</p>
+<h3>Etendez
+</h3>
+<p>Faites créer à vos élèves des collages ou des mosaïques via des empilements d'écrans permettant ainsi de présenter simultanément les différents diaporamas sur les différents écrans.
+</p>
+<p>Faites des recherches sur les paramètres de ligne de commande pour <font face="Courier New" size="2">feh. <font face="Verdana">Est-il possible de modifier la minuterie du diaporama afin que cet empilement d'images crée une image plus grande ?</font></font>
+</p>
+<h3>Explorer
+</h3>
+<p>Les élèves peuvent-ils utiliser leurs diaporamas pour convaincre quelqu'un d'acheter un produit ou de prendre une décision ?
+</p>
+<h3>Refléter
+</h3>
+<p>Faits une vidéo de vos créations ou une galerie de vos photographies, ou racontez dans une entrée du Journal votre expérience sur le partage de photos ou de créations.
+</p>
+<h2>Lire avec Sugar
+</h2>
+<p>Lisez des livres stockés sur votre ordinateur ou sur Internet. Une des façons de lire un livre est d'ouvrir l'Activité <strong>Naviguer</strong>, de cliquer sur le lien <strong>livres</strong>, puis sur e<strong>ncyclopédie</strong>, <strong>livre d'images</strong> ou <strong>dictionnaires</strong>.
+</p>
+<p><img src="Sugar/resized_400x300_469_600w.png" /> 
+</p>
+<p>Sugar OS contient une bibliothèque qui offre beaucoup de choses à lire dans différentes langues. Ces livres électroniques sont appelés "ebooks" ou "e-livres" - comme "livres électroniques" -, et les fichiers "Portable Document Format" (PDF) sont un des formats pour les libres électroniques.
+</p>
+<p>Si vous utilisez un XO, vous pouvez - si vous le désirez - pivoter l'écran du portable afin qu'il soit couché lorque vous lisez un ebook.
+</p>
+<h3>Lire des fichiers PDF
+</h3>
+<p>Pour voir un fichier PDF, il vous faut sélectionner son fichier dans l'Activité <strong>Naviguer</strong> ou dans le Journal, puis cliquer sur la touche flèches de direction pour que l'Activité <strong>Lire</strong> ouvre le fichier PDF en question.
+</p>
+<p>L'Activité <strong>Lire</strong> et l'Activité <strong>Regarde &amp; Ecoute</strong> sont deux activités qui ne sont pas présentées dans la <em>Vue Accueil</em>. Vous y accédez à travers une Activité de "lancement" telles que le <strong>Journal</strong> ou <strong>Naviguer</strong>.
+</p>
+<h3>Lire des fichiers epub
+</h3>
+<p>Epub est un format de livre électronique (ebook) que vous pouvez lire sur votre ordinateur après avoir téléchargé et installé un lecteur tel que le FBReader puis en ayant téléchargé et stocké les fichiers epub que vous voulez lire. Pour terminter cette procédure, FBReader doit être installé.
+</p>
+<h3>Installer le lecteur FBReader
+</h3>
+<p>Pour installer FBReader, connectez-vous à Internet, ouvrez l'Activité Terminal et saisissez:
+</p>
+<p> <font face="Courier New" size="2">su yum install fbreader</font>
+</p>
+<p>Puis appuyez <strong>enter</strong>, l'installateur téléchargera et installera alors FBReader. Vous pourrez ensuite télécharger quelques livres epub.
+</p>
+<h3>Télécharger et voir des livres
+</h3>
+<p dir="ltr">Pour télécharger et voir des livres epub, suivez cette procédure:
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p>1. Démarrez l'Activité Naviguer.
+  </p>
+  <p><img src="Sugar/casestudies/resized_400x178_8.2browsestartcrop.png" />
+  </p>
+  <p>2. Dans la barre d'adresse, saisissez <a href="http://www.snee.com/epubkidsbooks">http://www.snee.com/epubkidsbooks</a> puis appuyez <strong>enter</strong>.
+  </p>
+  <p>3. Faites dérouler jusqu'au livre que vous voulez télécharger puis cliquez sur son lien. Sugar affiche un compte à rebours pendant qu'il télécharge le fichier.
+  </p>
+  <p><img src="Sugar/resized_400x300_snee.com.png" />
+  </p>
+  <p>4. Allez sur l'Activité <strong>Journal</strong> en cliquant sur l'icône Journal en haut du Cadre.
+  </p>
+  <p>5. Insérez une carte SD ou une clé USB dans le XO. Le Journal fait apparaître une icône dans la barre inférieure lorsque vous insérez un périphérique de stockage externe.
+  </p>
+  <p>6. Localisez le fichier epub téléchargé mais ne cliquez pas dessus pour le lancer. Tirez le fichier depuis l'icône SD ou USB dans la barre inférieure.
+  </p>
+  <p><img src="Sugar/resized_400x300_filelittlebopeep.png" />
+  </p>
+  <p>7. Démarrez l'Activité <strong>Terminal</strong>.
+  </p>
+  <p>8. Cliquez dans la fenêtre Terminal et trouvez le nom du medium de stockage externe ; celui-ci se trouve dans le répertoire /media. Par exemple, saisissez la commande :
+  </p>
+  <p><font face="Courier New" size="2">df</font>
+  </p>
+  <p>9. Vous verrez le nom de votre carte SD ou de votre périphérique USB derrière la colonne commençant par /media/. Vous avez besoin de ce nom pour copier le fichier epub depuis le périphérique externe jusqu'à l'endroit correct où FBReader pourra trouver le fichier du livre.
+  </p>
+  <p><img src="Sugar/resized_400x300_Terminalmvfile.png" />
+  </p>
+  <p>10. retournez sur le répertoire media où le fichier epub est stocké et renommez le fichier en quelque chose de plus court. Par exemple, saisissez:
+  </p>
+  <p><font face="Courier New" size="2">cd /media/USBMEM</font> <code><font size="2">mv "File TheThreeBears.epub downloaded from_http___www.snee.com_ebooks_TheThreeBears.epub..zip" TheThreeBears.epub LittleBoPeep-ANurseryRhymePictureBook.epub </font></code>
+  </p>
+  <p>11. Copiez le nouveau nom de fichier dans le répertoire ~Books. Par exemple, saisissez:
+  </p>
+  <p><font face="Courier New" size="2">cp TheThreeBears.epub ~/Books</font>
+  </p>
+  <p>12. Lancez FBReader en tapant FBReader dans l'Activité Terminal. L'écran montrera le livre que vous avez téléchargé ainsi que la barre d'outils FBReader en haut de l'écran.
+  </p>
+  <p><img src="Sugar/casestudies/resized_400x300_fbreader.png" />
+  </p>
+</blockquote>
+<h3 dir="ltr">Idées pour l'étendre à la classe
+</h3>
+<h3 dir="ltr">Créez
+</h3>
+<p dir="ltr">Faites votre propre ebook, soit en créant un fichier PDF via un générateur libre de PDF en ligne, soit en apprenant le fonctionnement du format epub pour faire votre propre livre.
+</p>
+<p dir="ltr">Demandez à vos élèves d'apprendre à lire en lisant de plus en plus de livres et voyez les progrès de la classe en tenant à jour une liste de la quantité de livres lus entièrement durant une certaine période de temps.
+</p>
+<h3 dir="ltr">Collaborez
+</h3>
+<p dir="ltr">Partagez vos livres favoris en copiant vos fichiers sur les cartes SD ou les clés USB d'autres élèves.
+</p>
+<p dir="ltr">Faites écrire à vos élèves un courriel ou une lettre à l'auteur de leurs livres favoris, en leur demandant de poser aux auteurs des questions précises sur leur façon de travailler.
+</p>
+<h3 dir="ltr">Adaptez
+</h3>
+<p dir="ltr">Qui d'autre pourrait aimer les livres que vous avez téléchargé ? Pouvez-vous trouver des livres qui plairaient aussi à votre famille, et que vous pourriez découvrir ensemble ? Par exemple, des livres sur le pays ou l'endroit où vous vivez.
+</p>
+<h3 dir="ltr">Etendez
+</h3>
+<p dir="ltr">Utilisez l'Activité Écrire pour tenir un journal au fur et à mesure de votre lecture. De quelles questions aimeriez-vous discuter avec votre classe lorsque vous aurez terminé la lecture de ce livre ?
+</p>
+<p dir="ltr">Recherchez ce livre sur Amazon.com et lisez les critiques qui ont été faites sur lui. Avez-vous les mêmes réactions face à ce livre que les autres critiques ?
+</p>
+<h3 dir="ltr">Explorez
+</h3>
+<p dir="ltr">De quelle façon vos élèves utilisent-ils la lecture au quotidien pour prendre des décisions ou pour agir d'après ce qu'ils auront lu ?
+</p>
+<h3 dir="ltr">Reflétez
+</h3>
+<p dir="ltr">Écrivez une critique afin de convaincre d'autres personnes de lire un livre précis. Quels aspects du livre pouvez-vous utiliser pour convaincre quelqu'un que le temps investi pour lire en vaut la peine?
+</p>
+<h2 dir="ltr">Faire une démonstration de Turtle Art
+</h2>
+<p dir="ltr">TurtleArt est une Activité visuelle colorée à utiliser dans une salle de classe dont les élèves peuvent donner des ordres à la tortue et même épeler leurs noms.
+</p>
+<p dir="ltr"><img src="Sugar/casestudies/xo_school.JPG" />
+</p>
+<h3 dir="ltr">Activité (pas à pas)
+</h3>
+<p dir="ltr">Vous pouvez faire une démonstration sur un ordinateur en la présentant sur un rétro-projecteur.
+</p>
+<blockquote style="margin-right: 0px;" dir="ltr">
+  <p dir="ltr">1. Ouvrez l'Activité TurteArt.
+  </p>
+  <p dir="ltr"><img src="Sugar/casestudies/resized_400x300_turtle_art_started_1.png" />
+  </p>
+  <p dir="ltr">2. Cliquez sur Projet.
+  </p>
+  <p dir="ltr"><img src="Sugar/casestudies/resized_400x40_turtle_art_projects.png" />
+  </p>
+  <p dir="ltr"> 3. Cliquez sur l'icône des Exemples.
+  </p>
+  <p dir="ltr"><img src="Sugar/casestudies/resized_106x91_turtle_art_samples.png" />
+  </p>
+  <p dir="ltr">4. Sélectionnez un fichier d'exemple tel que <strong>birds.ta</strong> et cliquez sur Ouvrir.
+  </p>
+  <p dir="ltr"><img src="Sugar/casestudies/resized_303x236_turtle_art_load.png" />
+  </p>
+  <p dir="ltr"><img src="Sugar/casestudies/resized_400x300_turtle_art_birds.png" />
+  </p>
+</blockquote>
+<h3 dir="ltr">Créez
+</h3>
+<p dir="ltr">Demandez à vos élèves de suivre les instructions pour créer des lettres. Quelle lettre la suite de commandes ci-dessous réalise ? Essayez et vous verrez.
+</p>
+<p dir="ltr">1. Déposer chaque pièce sur le sol où se déplace la tortue.
+</p>
+<p dir="ltr">2. Puis, cliquez sur la barre à côté de la pièce et tapez les chiffres permettant d'entrer la valeur du nombre que vous désirez, par exemple pour la couleur ou pour l'ombre.
+</p>
+<p dir="ltr">3. Une fois que toutes les pièces auront été assemblées, cliquez sur la première pièce pour démarrer votre tortue.
+</p>
+<p dir="ltr"><img src="OLPC_simple/TuteLearningWithTurtleArt/Turtle_Art_img_27.jpg" height="563" width="202" />
+</p>
+<p dir="ltr">Votre tortue a-t-elle dessiné cette forme?
+</p>
+<p dir="ltr"><img src="OLPC_simple/TuteLearningWithTurtleArt/Turtle_Art_img_28.jpg" />
+</p>
+<p dir="ltr">Si votre tortue n'a pas dessiné un A majuscule ou si sa couleur est différente, vérifiez toutes les pièces l'une après l'autre, en faisant comme si vous étiez la tortue qui essaie de comprendre la commande que vous lui avez fournie. Lorsque vous verrez un nombre ou une pièce incorrecte, changez-la et essayez à nouveau.
+</p>
+<h3 dir="ltr">Collaborez
+</h3>
+<p dir="ltr">Faites partager à vos élèves les lettres qu'ils ont dessinés et faites-leur utiliser des combinaisons de leur noms afin de les faire travailler ensemble dans la salle de classe. Par exemple, les enfants avec un N dans leur nom peuvent partager leurs commandes de tortue en s'envoyant des fichiers .ta.
+</p>
+<h3 dir="ltr">Adaptez
+</h3>
+<p dir="ltr">Comment les commandes de la tortue peuvent-elles être adaptées pour indiquer à quelqu'un le chemin à suivre pour se rendre dans un magasin proche ? Demanderez-vous à cette personne de prendre un crayon et de le mettre sur papier? Comment indiquer à cette personne le nombre de degrés d'un virage ? Essayez d'indiquer à un camarade de classe comment marcher sur une ligne courbe en utilisant les commandes de la tortue.
+</p>
+<h3 dir="ltr">Etendez
+</h3>
+<p dir="ltr">Votre tortue pourrait-elle dessiner les plans d'une maison ou d'un labyrinthe?
+</p>
+<h3 dir="ltr">Explorez
+</h3>
+<p dir="ltr">Ce qui se passe dans l'Activité TurtleArt découle de l'assemblage d'un jeu de commandes dans un programme, ce qui correspond à la façon dont es ordinateurs apprennent des instructions et en tirent des résultats. Explorez l'idée de donner les commandes à autre chose qu'à une tortue, par exemple à un ordinateur.
+</p>
+<h3 dir="ltr">Reflétez
+</h3>
+<p dir="ltr">Vos commandes de tortue sont stockées dans le Journal afin que vous puissiez les passer en revue de temps en temps. Stockez les commandes qui composent votre nom.
+</p>
+<p dir="ltr"> 
+</p>
+
+<table>
+<tr>
+<td><a href="Sugar_Trouver_Activites.html">Aperçu des Activités</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_Apropos_Reseaux_Internet.html">Réseaux et Internet</a></td>
+</tr>
+</table>
+
+</body>
+</html>

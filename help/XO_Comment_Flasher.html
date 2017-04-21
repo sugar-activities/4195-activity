@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+<head>
+<title>XO_Comment_Flasher</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta name="author" content="OLPC France"/>
+<meta name="description" content="Le manuel pour le XO et Sugar"/>
+<meta name="keywords" content="OLPC XO Sugar"/>
+<link rel="stylesheet" href="manuel.css" type="text/css" />
+<body>
+
+
+<table>
+<tr>
+<td><a href="XO_Remplacer_Batterie.html">Remplacer la batterie</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_FAQ.html">Guide de diagnostic des problèmes</a></td>
+</tr>
+</table>
+
+<h1>Réinitialiser avec les paramètres d'usine par défaut</h1>
+
+<p><strong>Attention : TOUT ce qui se trouve sur votre XO sera effacé si vous utilisez un périphérique de stockage USB et la méthode ci-dessous afin de réinitialiser votre mémoire flash.</strong>
+</p>
+<p>Avec une connexion à Internet, vous pouvez préparer vous-même à reflasher (restaurer) les paramètres d'usine par défaut de votre XO. Cette procédure est appelée "installation propre" et est décrite plus en détail sur <a href="http://wiki.laptop.org/go/Clean-install_procedure">http://wiki.laptop.org/go/Clean-install_procedure</a>. (Les mises à jour de logiciel peuvent se faire lors d'une installation propre ou par d'autres moyens).
+</p>
+<p>L'installation propre fonctionne en reformatant totalement votre XO avec une image du logiciel stockée sur un dispositif de stockage USB.
+</p>
+<h2>Avant de commencer
+</h2>
+<p>Vous aurez besoin :
+</p>
+<ul>
+  <li>D'un périphérique de stockage USB qui possède au moins 1 GB d'espace libre. </li>
+  <li>D'un ordinateur avec une connexion Internet rapide (cela devrait vous permettre de télécharger les 300-400 MB requis en une heure environ). </li>
+</ul>
+<p>Vous pourrez alors copier les deux fichiers téléchargés sur votre périphérique de stockage USB. Après cela, le processus de restauration prendra environ dix minutes.
+</p>
+<h2>Préparer votre dispositif de stockage USB
+</h2>
+<p>1. Téléchargez l'image OS et son fichier "fs.zip" sur votre ordinateur local. Il s'agit de fichiers compressés, NE LES OUVREZ PAS. A la place, via votre navigateurs, allez visiter les deux pages suivantes et suivez leurs instructions :
+</p>
+<ul>
+  <li><a href="http://download.laptop.org/xo-1/custom/g1g1/releases/8.2-latest/os-image.html">http://download.laptop.org/xo-1/custom/g1g1/releases/8.2-latest/os-image.html</a> </li>
+  <li><a href="http://download.laptop.org/xo-1/custom/g1g1/releases/8.2-latest/fs-zip.html">http://download.laptop.org/xo-1/custom/g1g1/releases/8.2-latest/fs-zip.html</a> </li>
+</ul>
+<p>2. Copiez les fichiers qui en proviennent sur votre dispositif de stockage USB "propre" (c'est-à-dire un dispositif formaté FAT ou FAT32, pas un dispositif formaté en mode rapide).
+</p>
+<ul>
+  <li>Votre périphérique de stockage USB devrait maintenant contenir les deux fichiers nommés  <em>enxxx-n.img (où xxx est le numéro de version) </em>et <em>fs.zip</em>. (Sur certains systèmes d'exploitation, les extensions ".img" et ".zip" peuvent être cachées). </li>
+  <li>Ces fichiers devraient occuper au total au moins 300 MB d'espace. </li>
+</ul>
+<p>3. Enlevez le dispositif de stockage USB et débranchez-le de votre ordinateur une fois certain d'avoir terminé correctement la procédure.
+</p>
+<p>Vous êtes maintenant prêt à réinitialiser vous-même les paramètres d'usine par défaut.
+</p>
+<h2>  Réinstaller le système d'exploitation du XO
+</h2>
+<p>1. Eteignez votre XO.
+</p>
+<p>2. Connectez votre périphérique de stockage USB au XO.
+</p>
+<p>3. Maintenez appuyées les quatre touches gamepad qui se trouvent en dessus du bouton de mise en route, puis démarrez votre XO. <img style="WIDTH: 227px; HEIGHT: 155px" align="right" src="OLPC_simple/HowToFlash/Power_button.jpg" width="227" height="155" /> Vous verrez alors apparaître le message "Release the game key to continue". Ne continuez pas tant que vous n'aurez pas vu ce message.
+</p>
+<p>4. Relâchez les touches Jeu. Le processus de réinstallation sera automatiquement lancé. Vous verrez d'abord une grille se colorer progressivement avec l'avancement de la mise à jour, puis le XO affichera "Rebooting in 10 seconds..." Le XO redémarrera alors avec une nouvelle image.
+</p>
+<p>5. Entrez votre nom puis cliquez sur "Next" (Suivant)
+</p>
+<p>6. Cliquez sur l'icône XO pour modifier les couleurs puis cliquez sur "Done" (Fait).
+</p>
+<p>7. En option, vous pouvez connecter votre XO à Internet puis utiliser le Panneau de Contrôle afin de télécharger les dernières Activités.
+</p>
+<h3>Si quelque chose ne fonctionnait pas
+</h3>
+<p>Si vous voyez apparaître le message "Bad hash at eblock #0" lorsque vous réinitialisez votre XO, cela signifie que l'image que vous avez copiée sur votre dispositif de stockage USB est corrompue. Vous devrez alors répéter l'étape de préparation, éventuellement avec un autre dispositif de stockage USB, puis réessayer l'étape de réinstallation.
+</p>
+<h2>Utilisateur avancé : Changer le système d'exploitation de votre XO
+</h2>
+<p>Lorsque vous vous serez familiarisé avec la procédure ci-dessus, vous pourrez décider de modifier, mettre à jour, revenir à une version antérieure ou même remplacer, tout le système d'exploitation. Il existe différentes façons de le faire, vous pourrez toutes les trouver sur <a href="http://wiki.laptop.org/go/Change_your_OS">http://wiki.laptop.org/go/Change_your_OS</a>. Certaines de ces procédures (comme la mise à jour avec la commande olpc-update) peuvent permettre une meilleure utilisation du réseau et être facilement annulées.
+</p>
+
+<table>
+<tr>
+<td><a href="XO_Remplacer_Batterie.html">Remplacer la batterie</a></td>
+<td><a href="index.html">Index</a></td>
+<td><a href="XO_FAQ.html">Guide de diagnostic des problèmes</a></td>
+</tr>
+</table>
+
+</body>
+</html>
